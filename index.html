@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta lang="en, ua">
+	<meta name="keywords" content="menu, cписки: ul, ol, dl, форми: form, input type, text, password,checkbox, radio, submit, reset, file, hidden, select, select optgroup, textarea, fieldset, атрибути форм, метатеги, iv, padding, margin, float, властивість clear, span, підключення CSS стилів, найпростіші селектори: по тегу, по класу, по ідентифікатору, складні селектори: дочірні селектори, мультиселектори, сусідні селектори">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome.css">
+	<title>Menu</title>
+
+</head>
+<body>
+    <div id="header">
+        <h1>
+            Приватний юрист
+            <br>
+            Харабет Ольга Ігорівна   
+        </h1>
+        
+        <nav class="menu">
+            <ul class="menu_items">
+                <li><a href="index.html">Головна</a>
+                    <ul id="vertical_1" class="lew_menu_2">
+                        <li><a href="#timetable">Графік роботи</a></li>
+                        <li><a href="#news">Новини</a></li>
+                        <li><a href="#leave_request">Залишити заявку</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_me.html">Про мене</a>
+                    <ul id="vertical_2" class="lew_menu_2">
+                        <li><a href="about_me.html">Освіта</a></li>
+                        <li><a href="about_me.html">Кар'єра</a></li>
+                        <li><a href="about_me.html">Галузі практики</a></li>
+                    </ul>
+                </li>
+                <li><a href="list_of_services.html">Перелік послуг</a>
+                    <ul id="vertical_3" class="lew_menu_2">
+                        <li><a href="list_of_services.html">Для фізичних осіб</a></li>
+                        <li><a href="list_of_services.html">Для юридичних осіб</a></li>
+                    </ul>
+                </li>
+                <li><a href="prices.html">Ціни на послуги</a></li>
+                <li><a href="blog.html">Блог</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+        <div class="empty"></div>
+    </div>
+
+    <div class="middle">
+        <div>
+            <span><a name="timetable">Графік роботи:</a></span>
+            <br>
+            <p>
+            Пн.-пт.: з 09:00 по 18:00
+            </p>
+            <p>
+            Сб.-нд.: вихідні дні   
+            </p>
+        </div>
+
+        <div>
+            <span><a name="news">Новини</a></span>
+            <br>
+            <p>
+                Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини Новини
+            </p>
+        </div>         
+        
+        <div>
+            <span><a name="leave_request">Залишити заявку</a></span>
+            <br>
+            <form>
+                <p>Ім'я:</p>
+                <p><input type="text" name="firstname"></p>
+                <p>Прізвище:</p>
+                <p><input type="text" name="lastname"></p>
+                <p>Чоловік</p>
+                <p><input type="radio" name="gender" value="male" checked></p>
+                <p>Жінка</p>
+                <p><input type="radio" name="gender" value="female"></p>
+                <p>Інше</p>
+                <p><input type="radio" name="gender" value="other"></p>
+                <p>Вік:</p>
+                <p><input type="number" min="16"></p>
+                <p>E-mail:</p>
+                <p><input type="email" name="mail" required></p>
+                <p>Оберіть послугу:</p>
+                <p><select name="services">
+                    <option value="pre_trial_protection">Досудовий захист</option>
+                    <option value="judicial_protection">Судовий захист</option>
+                    <option value="enforcement">Виконавче провадження</option>
+                    <option value="registration_of_ownership">Оформлення права власності</option>
+                </select>
+                </p>
+                <p>Зміст заявки:</p>
+                <p><textarea cols="30" rows="10"> </textarea> </p>
+                <p>Залиште Ваш коментар про якість послуг:</p>
+                <p><textarea disabled cols="30" rows="10"> </textarea> </p>
+                <p><input type="submit" value="Відправити"></p>
+                <p><input type="reset" value="Очистити"></p>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<footer>
+    <h3>Мої партнери</h3>
+</footer>
+</html>

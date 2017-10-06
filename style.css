@@ -1,0 +1,205 @@
+html {
+	font-family: Georgia, sans-serif;
+	background-image: url("old_paper_light.jpg");
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	top: 0%;
+	background-image: url("old_paper_light.jpg");
+}
+
+h1 {
+	margin: 0;
+	padding: 20px  0px 10px 0px;
+	text-align: center;
+	color: #660000;
+}
+
+.menu {
+	top: 155px;
+	left: 0px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+    justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+nav > ul {
+	font-size: 30px;
+}
+
+nav > ul > li > ul {
+font-size: 20px;
+}
+
+.menu ul li {
+	padding: 10px 25px 10px 25px;
+	background-image: url("old_paper.jpg");
+	box-shadow: 10px 10px 5px rgb(102, 51, 0);
+
+/*додала transition для всіх пунктів меню*/
+	-webkit-transition: width 2s; 
+    -moz-transition: width 2s;
+    -o-transition: width 2s;
+    transition: width 2s;
+}
+
+.menu ul li:hover {
+	box-shadow: 20px 20px 10px rgb(230, 115, 0);
+}
+
+.menu ul li, .menu ul {
+	display: inline-block;
+	
+}
+
+.menu ul li {
+	border: 1px solid #663300;
+
+}
+
+.menu ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.menu ul ul a, .menu ul li a {
+	color: #ffffcc;
+	text-decoration: none; 
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: -25px;
+}
+
+.menu li:hover ul {
+	display: block;
+	
+}
+
+.menu li:hover li {
+	display: block;
+	
+}
+
+span, #header_price {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#blog_image_1 {
+	float: left;
+	padding: 30px 30px;
+}
+
+#blog_image_2,
+#blog_image_3,
+#blog_image_4 {
+	padding: 30px 30px;
+	float: left;
+	width: 300px;
+	height: 300px;
+	
+}
+
+.empty {
+	top: 1000px;
+	left: 0px;
+	height: 100px;
+}
+
+.middle {
+	position: absolute;
+	top: 1100px;
+    left: 0;
+}
+
+footer {
+	/* position: fixed; 
+    left: 0;
+    bottom: 0; */
+    padding: 5px;
+    background-image: url("old_paper.jpg");
+   	color: #ffffcc;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+}
+
+form > input:default {
+    border-color: rgb(255, 69, 0);
+}
+
+form {
+	width: 400px;
+}
+
+form > p:nth-child(2n+1) {
+            width: 35%;
+            float: left;
+}
+
+form > p:nth-child(2n+2) {
+            width: 65%;
+            float: left;
+}
+
+textarea:disabled { 
+	background-image: url(textarea.jpg);
+    border: 1px solid #ffffcc;
+    border: 1px solid rgb(244, 164, 96);
+    padding: 5px;
+}
+
+input:invalid {
+            background: rgba(255, 127, 80, 0.5);
+            font-weight: bold;
+}
+
+input:valid {
+            background: rgba(154, 205, 50, 0.5);
+}
+            
+input:not([type=submit]) {
+            border: 1px solid rgb(244, 164, 96);
+            border-radius: 4px;
+            color: #660000;
+            padding: 4px 2px;
+            margin: 2px;
+            width: 230px;
+}
+
+textarea {
+border: 1px solid rgb(244, 164, 96);
+}
+
+select:only-child:hover, input:hover, textarea:hover {
+	border: 1px solid rgb(139, 69, 19);
+}
+
+select:only-child {
+	border: 1px solid rgb(244, 164, 96);
+}
+
+ input[type^="subm"] {
+    background: rgba(255, 69, 0, 0.5);
+    border: 1px solid rgb(139, 69, 19);
+    border-radius: 4px;
+    color: #660000;
+    padding: 4px 2px;
+    margin: 2px;
+    width: 120px;
+}
+
